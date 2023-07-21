@@ -110,7 +110,7 @@ img {
   padding: 24px 0;
 }
 .logo {
-  margin-right: 76px;
+  /* margin-right: 76px; */
   font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -130,6 +130,11 @@ img {
 .header-list {
   display: flex;
   gap: 40px;
+}
+@media only screen and (max-width: 767px) {
+  .header-list {
+    display: none;
+  }
 }
 .header-item {
 }
@@ -167,6 +172,11 @@ img {
 .adress-list {
   display: flex;
   gap: 40px;
+}
+@media only screen and (max-width: 767px) {
+  .adress-list {
+    display: none;
+  }
 }
 
 .adress-item {
@@ -241,7 +251,6 @@ img {
   /* padding-top: 120px;
   padding-bottom: 120px; */
 }
-
 @media only screen and (min-width: 768px) {
   .features {
   }
@@ -289,6 +298,7 @@ img {
     gap: 24px;
   }
 }
+
 .icon-conteiner {
   display: none;
   /* display: flex;
@@ -301,7 +311,6 @@ img {
   padding-bottom: 24px;
   margin-bottom: 8px; */
 }
-
 @media only screen and (min-width: 1158px) {
   .icon-conteiner {
     display: flex;
@@ -310,14 +319,11 @@ img {
     height: 112px;
     background-color: var(--white-bg-cl);
     border-radius: 4px;
-    /* padding-top: 24px;
-    padding-bottom: 24px; */
     margin-bottom: 8px;
   }
 }
 
 .icon {
-  /* display: none; */
 }
 
 .feature-item {
@@ -339,18 +345,41 @@ img {
     width: calc((100% - 72px) / 4);
   }
 }
+
 .feature-subtitle {
   margin-bottom: 8px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.07em;
+  text-transform: capitalize;
   color: var(--dark-title-cl);
 }
+@media only screen and (min-width: 768px) {
+  .feature-subtitle {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .feature-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+}
+
 .text {
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+@media only screen and (min-width: 1158px) {
+  .text {
+    font-weight: 400;
+  }
 }
 /**Production styles*/
 .production {
